@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Disappearing Ninja</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('img').click(function() {
+                $(this).hide();
+            })
+            $('button').click(function() {
+                $('img').show();
+            })
+        });
+    </script>
+</head>
+<style>
+    img {
+        max-height: 480px;
+        max-width: 480px;
+    }
+    
+    button {
+        padding: 200px;
+    }
+</style>
+
+<body>
+    <img src="images\hqdefault.jpg"></img>
+    <img src="images\hqdefault.jpg"></img>
+    <img src="images\hqdefault.jpg"></img>
+    <img src="images\hqdefault.jpg"></img>
+    <img src="images\hqdefault.jpg"></img>
+    <img src="images\hqdefault.jpg"></img>
+    <img src="images\hqdefault.jpg"></img>
+    <img src="images\hqdefault.jpg"></img>
+    <button>Restore</button>
+</body>
+
+</html>
